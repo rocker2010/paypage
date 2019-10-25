@@ -1,0 +1,356 @@
+<!DOCTYPE HTML>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+		<meta name="format-detection" content="telephone=no">
+		<link href="https://cdn.bootcss.com/simple-line-icons/2.4.1/css/simple-line-icons.css" rel="stylesheet">
+		<script src="css/jquery-2.1.1.min.js" type="text/javascript"></script>
+		<link href="css/payment.css" rel="stylesheet" type="text/css">
+		<link rel="shortcut icon" href="favicon.ico">
+		<title>订单支付</title>
+	</head>
+
+	<body>
+		<div class="payPageH">
+			<div class="header">
+				<div class="header-lower">
+					<div class="header-logo">
+						<a href="#"> <img title="" alt="Tiens Store" src="http://dev.b2c3.tiens.com/Themes/defaultclean/Content/images/logo.png">
+						</a>
+						<div class="logoItem">收银台</div>
+						<div class="logoUser"><img src="img/iam@3x.png" title="it@tiens.com"><span><b>it@tiens.com</b></span></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="payPageC">
+			<div class="payCont">
+				<div class="PayLeft text-center"><img src="img/huabanfuben.png" alt=""></div>
+				<div class="PayRight">
+					<h4 class="payTitle">订单提交成功，请您尽快付款！
+						<span>应付总额：<b>¥298.00</b>元</span></h4>
+					<p class="orderNum">订单号：25093949805</p>
+					<div class="payNote">
+						<p><span class="text-orange">请于24小时之内完成付款</span>，若逾期未付款，订单将被取消，需要重新下单！<span>剩余时间：23小时56分16秒</span></p>
+						<a href="javaScript:" class="payOrderBtn">订单详情 <i class="icon-plus"></i></a>
+					</div>
+					<ul class="payOrderList">
+						<li><label>收货信息：</label>
+							<div>
+								<p>河北邯郸市邯山区城区 罗成头邯钢第二生活区13号楼3单元10号</p>
+							</div>
+						</li>
+						<li><label>商品名称：</label>
+							<div>
+								<p>Aprotie瑟茜女神精华液-DM25<br>Aprotie 保湿活性乳液
+							</div>
+						</li>
+						<li><label>发票信息：</label>
+							<div>
+								<p>不开发票</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="payPageC" style="margin-top: 0;">
+			<div class="cashTitle">选择以下支付方式付款 </div>
+			<div class="payStyle">
+				<!-- <h4>支付平台</h4> -->
+				<ul class="payStyleList">
+					<li><img src="img/payOnline_zfb.png"></li>
+					<li><img src="img/payOnline_ant_huabei.png"></li>
+					<li><img src="img/weixinpay.png"></li>
+					<li class="bankActive"><img src="img/unionpay.png"></li>
+					<div class="bankForm" style="display: none;">
+						<ul class="formli">
+							<li>
+								<div class="formli_l">银行卡号<span class="bt">*</span></div>
+								<div class="formli_r">
+									<input type="text" name="" id="" value="" />
+									<p class="error">银行卡号验证失败</p>
+								</div>
+							</li>
+							<li>
+								<div class="formli_l">有效期<span class="bt">*</span></div>
+								<div class="formli_r">
+									<select style=" width: 50px; ">
+										<option value="">1</option>
+										<option value="">2</option>
+										<option value="">3</option>
+										<option value="">4</option>
+										<option value="">5</option>
+										<option value="">6</option>
+										<option value="">7</option>
+										<option value="">8</option>
+										<option value="">9</option>
+										<option value="">10</option>
+										<option value="">11</option>
+										<option value="">12</option>
+									</select>
+									<span>/</span>
+									<select>
+										<option value="">2019</option>
+										<option value="">2020</option>
+										<option value="">2021</option>
+										<option value="">2022</option>
+										<option value="">2023</option>
+										<option value="">2024</option>
+										<option value="">2025</option>
+										<option value="">2026</option>
+										<option value="">2027</option>
+										<option value="">2028</option>
+										<option value="">2029</option>
+										<option value="">2030</option>
+										<option value="">2031</option>
+										<option value="">2032</option>
+										<option value="">2033</option>
+										<option value="">2034</option>
+										<option value="">2035</option>
+										<option value="">2036</option>
+										<option value="">2037</option>
+										<option value="">2038</option>
+										<option value="">2039</option>
+										<option value="">2040</option>
+										<option value="">2041</option>
+										<option value="">2042</option>
+									</select>
+								</div>
+							</li>
+							<li>
+								<div class="formli_l">开卡人姓名<span class="bt">*</span></div>
+								<div class="formli_r"><input type="text" name="" id="" value="" /></div>
+							</li>
+							<li>
+								<div class="formli_l">身份证号码<span class="bt">*</span></div>
+								<div class="formli_r"><input type="text" name="" id="" value="" /></div>
+							</li>
+							<li>
+								<div class="formli_l">CVV</div>
+								<div class="formli_r"><input type="text" name="" id="" value="" style=" width: 50px; "></div>
+							</li>
+							<!-- <li>
+								<div class="formli_l">手机号</div>
+								<div class="formli_r"><input type="text" name="" id="" value=""/></div>
+							</li>
+							<li>
+								<div class="formli_l">手机验证码</div>
+								<div class="formli_r"><input type="text" name="" id="" value=""  style="width: 120px;"/><input type="button" name="" id="" value="获取手机验证码" class="verifyCodeBtn"/></div>
+							</li> -->
+						</ul>
+					</div>
+					<li><img src="img/payOnline_gsyh.png"></li>
+					<li><img src="img/payOnline_gdyh.png"></li>
+					<li><img src="img/payOnline_gfyh.png"></li>
+					<li><img src="img/payOnline_jsyh.png"></li>
+					<li><img src="img/payOnline_jtyh.png"></li>
+				</ul>
+			</div>
+			<!-- <div class="payStyle payStyleLast">
+				<h4>银行借记卡及信用卡 </h4>
+				<ul class="payStyleList">
+					<li><img src="img/payOnline_gsyh.png"></li>
+					<li><img src="img/payOnline_gdyh.png"></li>
+					<li><img src="img/payOnline_gfyh.png"></li>
+					<li><img src="img/payOnline_jsyh.png"></li>
+					<li><img src="img/payOnline_jtyh.png"></li>
+				</ul>
+			</div> -->
+			<div class="payPageCfoot">
+				<h4 class="payTitle"> <span style="float: right;">应付总额：<b>¥298.00</b>元</span></h4>
+				<div class="text-right"><button class="payNowBtn">马上支付</button></div>
+			</div>
+		</div>
+		<div class="mask">
+			<div class="popWindow">
+				<h4>正在支付......</h4>
+				<div class="popBody">
+					<div class="success">
+						<p>支付成功！<br><a href="">查看订单详情>></a></p>
+					</div>
+					<div class="fail">
+						<p>如果支付失败！<br><a href="">查看失败原因>></a></p>
+					</div>
+				</div>
+				<a href="javascript:" class="closeBtn"><i class="icon-plus"></i></a>
+			</div>
+		</div>
+		<div class="mask" id="checkMob">
+			<div class="popWindow">
+				<h4>One-time Confirmation Code</h4>
+				<div>
+					<ul class="formli min">
+						<li>
+							<div class="formli_l" style="font-size: 16px; margin-bottom: 10px;">请输入您手机收到的验证码</div>
+							<div class="formli_r"><input type="text" name="" id="mob" value="" />
+								<p class="error" style="display: none;">验证码验证失败</p>
+							</div>
+						</li>
+						<li>
+							<div class="formli_l" style="font-size: 16px; margin-bottom: 10px;">选择期限</div>
+							<div class="formli_r">
+								<select style=" width: 50px; ">
+									<option value="">1</option>
+									<option value="">2</option>
+									<option value="">3</option>
+									<option value="">4</option>
+									<option value="">5</option>
+									<option value="">6</option>
+									<option value="">7</option>
+									<option value="">8</option>
+									<option value="">9</option>
+									<option value="">10</option>
+									<option value="">11</option>
+									<option value="">12</option>
+								</select>
+								<span>/</span>
+								<select>
+									<option value="">2019</option>
+									<option value="">2020</option>
+									<option value="">2021</option>
+									<option value="">2022</option>
+									<option value="">2023</option>
+									<option value="">2024</option>
+									<option value="">2025</option>
+									<option value="">2026</option>
+									<option value="">2027</option>
+									<option value="">2028</option>
+									<option value="">2029</option>
+									<option value="">2030</option>
+									<option value="">2031</option>
+									<option value="">2032</option>
+									<option value="">2033</option>
+									<option value="">2034</option>
+									<option value="">2035</option>
+									<option value="">2036</option>
+									<option value="">2037</option>
+									<option value="">2038</option>
+									<option value="">2039</option>
+									<option value="">2040</option>
+									<option value="">2041</option>
+									<option value="">2042</option>
+								</select>
+							</div>
+						</li>
+						<li>
+							<div class="formli_r"><input type="button" name="" value="确认" class="verifyCodeBtn" onclick="xianshi1()" style="margin: 0 auto; font-size: 16px!important; display: block; height: 37px;" /></div>
+						</li>
+					</ul>
+				</div>
+				<a href="javascript:" class="closeBtn"><i class="icon-plus"></i></a>
+			</div>
+		</div>
+		<div class="mask" id="checkError">
+			<div class="popWindow">
+				<h4>Error......</h4>
+				<div style="padding: 20px;">
+					<img src="img/error.png" class="mesImg">
+					<p>支付失败了，XXX错误，更正后重新支付</p>
+					<input type="button" name="" value="确认" class="verifyCodeBtn" onclick="hidemask()" style="margin: 0 auto; font-size: 16px!important; display: block; height: 37px;" />
+				</div>
+			</div>
+		</div>
+		<div class="mask" id="loading">
+			<div class="popWindow" style=" width: 200px; padding: 15px;text-align: center; ">
+				<img title="" alt="Tiens Store" src="http://dev.b2c3.tiens.com/Themes/defaultclean/Content/images/logo.png" style=" width: 110px; display: block; margin: 0 auto; ">
+				<div style="margin-top: 15px; color: #a5a5a5;"> 正在支付 </div>
+				<img src="img/5-121204194026.gif">
+			</div>
+		</div>
+		<div class="footer-lower">
+			<div class="footer-info">
+				<span class="footer-disclaimer"> 版权所有 © 2019 天狮商城 FOR TIS 保留所有权利 </span>
+			</div>
+		</div>
+		<script type="text/javascript">
+			var tag = 0;
+
+			function shopdz_alert(title, second, callback) {
+				$('.shopdz_alert').remove();
+				$('#alertbox').remove();
+				var _tag = tag++;
+				var html = '<div id="alertbox"><div id="address-remind-' + _tag + '" class="address-remind shopdz_alert">' + title +
+					'</div></div>';
+				if (typeof second == 'number') {
+					var timeout = second * 1000;
+				} else {
+					var timeout = 1000;
+				}
+				$('body').append(html);
+				$('#address-remind-' + _tag).fadeIn().delay(timeout).fadeOut(1000, 'swing', function() {
+					if (typeof callback == 'function') callback();
+					$('#address-remind-' + _tag).remove();
+					$('#alertbox').remove();
+				});
+			}
+
+			$(".payOrderBtn").click(function() {
+				$(".payOrderList").fadeToggle();
+				$(this).find("i").toggleClass('close');
+			})
+
+			$(".payStyleList > li").click(function() {
+
+				$(this).toggleClass("select");
+
+				if ($(this).hasClass("bankActive")) {
+					$(".payNowBtn").off("click").click(function(event) {
+						$("#checkMob").show();
+					});
+					$(".bankForm").show();
+				} else {
+					$(".bankForm").hide();
+					$(".payNowBtn").off("click").click(function(event) {
+						setTimeout(function() {
+							$("#loading").hide(function() {
+								alert("我去支付了！~");
+							});
+						}, 3000);
+						$("#loading").show();
+					});
+				}
+
+				if ($(".payStyleList li").filter(".select").length >= 2) {
+					$(".payStyleList li").filter(".select").removeClass("select");
+					$(this).toggleClass("select");
+				} else {
+					$(this).siblings(".select").removeClass("select");
+				}
+			})
+
+			$(".closeBtn").click(function() {
+				$(".mask").hide();
+			})
+
+			function hidemask() {
+				$(".mask").hide();
+			}
+
+			function xianshi1() {
+				if ($("#mob").val() == "000000") {
+					$("#checkMob").hide();
+					$("#loading").show();
+					setTimeout(function() {
+						$("#loading").hide(function() {
+							alert("支付成功！~");
+						});
+					}, 3000);
+				} else if ($("#mob").val() == "111111") {
+					$("#checkMob").hide();
+					$("#checkError").show();
+				} else {
+					$("#checkMob .error").show();
+				}
+
+			};
+
+			$(".payNowBtn").off("click").click(function(event) {
+				shopdz_alert("请先选择支付方式！");
+			});
+		</script>
+	</body>
+
+</html>
