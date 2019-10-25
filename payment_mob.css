@@ -1,0 +1,557 @@
+html,
+body {
+	overflow-x: hidden;
+	padding: 0;
+	margin: 0;
+	background: #f5f5f5;
+	font-size: 625%;
+	color: #212121;
+	font-family: "Microsoft Yahei", Arial, Helvetica, sans-serif;
+	/*100 ÷ 16 × 100% = 625%*/
+}
+
+body {
+	padding-bottom: 0.8rem;
+}
+
+header {}
+ul,
+li {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.topTools {
+	margin: 0;
+	padding: 0.24rem 0.26rem;
+	font-size: 0.24rem;
+	font-weight: normal;
+}
+
+.topTools .header-logo {
+	vertical-align: bottom;
+	margin-right: 0.21rem;
+	width: 1.4rem;
+}
+
+.topTools span {
+	vertical-align: middle;
+	font-size: 0;
+	display: inline-block;
+	float: right;
+	margin-top: 0.04rem;
+	position: relative;
+}
+
+.topTools span b {
+	display: none;
+	font-size: 0.12rem;
+	position: absolute;
+	right: -0.2rem;
+	font-weight: normal;
+	color: #ffffff;
+	background: #a0a0a0;
+	border-radius: 0.03rem;
+	padding: 0 0.06rem;
+	bottom: -0.2rem;
+}
+
+.topTools span:hover b {
+	display: block;
+}
+
+.topTools .logoUser {
+	width: 0.24rem;
+}
+
+.orderItem {
+	padding-left: 1rem;
+	position: relative;
+}
+
+.orderItem h4 {
+	padding: 0;
+	margin: 0;
+	font-size: 0.19rem;
+}
+
+.orderItem ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.orderItem ul li {
+	margin-bottom: 0.06rem;
+}
+
+.orderItem ul li:last-child {
+	margin-bottom: 0;
+}
+
+.orderItem ul li b {
+	color: #ff7f00;
+	font-size: 0.18rem;
+}
+
+.orderItem .check {
+	position: absolute;
+	left: 0;
+	width: 0.8rem;
+	top: -0.04rem;
+}
+
+.payOrderList {
+	padding: 0.14rem 0 0 0;
+	margin-bottom: 0;
+	display: none;
+	font-size: 0.15rem;
+}
+
+.payOrderList li {
+	list-style: none;
+}
+
+.payOrderList li label {
+	/* display: block; */
+	margin-bottom: 0.02rem;
+	font-weight: normal;
+	color: #9d9d9d;
+}
+
+.payOrderList li div {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.payOrderList li div p {
+	margin-bottom: 0.08rem;
+	margin-top: 0;
+}
+
+.payOrderList li:last-child div p {
+	margin-bottom: 0;
+}
+
+.payNote {
+	font-size: 0.16rem;
+	overflow: hidden;
+	position: relative;
+	border-top: 1px #e0e0e0 solid;
+	margin-top: 0.2rem;
+	padding-top: 0.2rem;
+	color: #969696;
+}
+
+.payNote p {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.payNote p span {
+	color: #212121;
+}
+
+.box {
+	background: #fff;
+	box-shadow: 0 0 0.02rem #dedede;
+	padding: 0.26rem;
+	margin-bottom: 0.14rem;
+	font-size: 0.16rem;
+	margin-left: -0.01rem;
+	margin-right: -0.01rem;
+}
+
+.textGrey {
+	color: #969696 !important;
+}
+
+.textOrange {
+	color: #ff7f00 !important;
+}
+
+.payOrderBtn {
+	width: 0.35rem;
+	height: 0.35rem;
+	display: block;
+	text-align: center;
+	line-height: 0.35rem;
+	border: 1px #f5f5f5 solid;
+	border-radius: 5px;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+
+.payOrderBtn img {
+	width: 0.14rem;
+}
+
+.payOrderBtn img.active {
+	transform: rotate(180deg);
+}
+
+.payStyle {
+	margin-bottom: 0.15rem;
+	overflow: hidden;
+}
+
+.payStyle .payStyleList {
+	margin: 0 0 0 -0.14rem;
+	padding: 0;
+	overflow: hidden;
+}
+
+.payStyle h4 {
+	font-size: 0.16rem;
+	color: #616161;
+	font-weight: bold;
+	margin-bottom: 0.15rem;
+	margin-top: 0;
+}
+
+.payStyle .payStyleList>li {
+	float: left;
+	width: 1.75rem;
+	height: 0.60rem;
+	line-height: 0.60rem;
+	margin-left: 0.14rem;
+	margin-bottom: 0.14rem;
+	border: 0.01rem solid #e0e0e0;
+	text-align: center;
+	cursor: pointer;
+	overflow: hidden;
+	_zoom: 1;
+	-webkit-transition: all .3s;
+	transition: all .3s;
+	box-sizing: border-box;
+}
+
+.payStyle .payStyleList>li:last-child {
+	margin-bottom: 0;
+}
+
+.payStyle .payStyleList>li.select {
+	border-color: #ff6700;
+	border-width: 0.02rem;
+	position: relative;
+}
+
+.payStyle .payStyleList>li.select:before {
+	content: "";
+	position: absolute;
+	background: url(../img/ios/checktriangle@2x.png) no-repeat;
+	right: -1px;
+	height: 0.3rem;
+	width: 0.3rem;
+	background-size: auto 100%;
+	bottom: -1px;
+}
+
+.payStyle .payStyleList li img {
+	cursor: pointer;
+	width: 100%;
+	vertical-align: middle;
+}
+
+.payStyle .payStyleList li:hover {
+	border-color: #ff6700
+}
+
+.payStyleLast {
+	margin-bottom: 0;
+}
+
+.payPageCfoot {
+	height: 0.70rem;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	background: #fff;
+	font-size: 0.14rem;
+	box-shadow: 0 0 0.5rem #ccc;
+}
+
+.payTitle {
+	padding: 0 0.26rem;
+	margin: 0;
+	display: block;
+	font-weight: normal;
+	color: #969696;
+}
+
+.payTitle span {
+	display: block;
+	margin-top: 0.1rem;
+}
+
+.payTitle b {
+	font-size: 0.24rem;
+	margin: 0 0.05rem;
+	color: #ff7f00;
+	font-style: italic;
+}
+
+.payNowBtn {
+	border: 0;
+	display: block;
+	position: absolute;
+	height: 0.70rem;
+	line-height: 0.76rem;
+	font-size: 0.18rem;
+	right: 0;
+	top: 0;
+	background: #09a5ed;
+	padding: 0 0.3rem;
+	color: #fff;
+}
+.error {
+    margin: 0.02rem 0 0;
+    font-size: 0.14rem;
+    color: #757575;
+}
+.bankForm {
+    border: 1px #ff6700 solid;
+    padding: 0.2rem 0.15rem;
+    border-radius: 0.05rem;
+    clear: both;
+    margin-left: 0.14rem;
+    margin-bottom: 0.15rem;
+    background: #f9fdf8;
+}
+.shopdz_alert {
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%);
+	background: #000000;
+	color: #fff;
+	padding: 0.2rem;
+	border-radius: 0.05rem;
+	font-size: 0.14rem;
+}
+.formli {
+	padding: 0;
+}
+.formli.min {
+    padding: 0.1rem 0.2rem 0.2rem;
+}
+.formli li {
+    margin-bottom: 0.15rem;
+	font-size: 0.16rem;
+}
+.formli li:last-child{
+	margin-bottom: 0;
+}
+.formli .formli_l {
+	color: #9e9e9e;
+	display: inline-block;
+	width: 1.2rem;
+	vertical-align: top;
+	margin-top: 0.05rem;
+	text-align: right;
+	font-size: 0.14rem;
+	margin-right: 0.1rem;
+}
+
+.formli .formli_r {
+	display: inline-block;
+}
+
+.formli .formli_r span {
+	margin: 0 0.05rem;
+}
+
+.formli .formli_r input[type="text"],
+.formli .formli_r select {
+	border: 1px #e0e0e0 solid;
+	padding: 0.06rem;
+	font-size: 0.16rem;
+	box-sizing: border-box;
+	outline-color: invert;
+	outline-style: none;
+	outline-width: 0px;
+	text-shadow: none;
+	-webkit-appearance: none;
+	-webkit-user-select: text;
+	outline-color: transparent;
+	box-shadow: none;
+	background: #fff;
+}
+
+.formli .formli_r select {
+	width: 1rem;
+}
+
+.formli .formli_r input {
+	width: 1.8rem;
+	margin-right: 0.1rem;
+}
+
+.formli.min .formli_l {
+	display: block;
+	text-align: left;
+	width: auto;
+}
+
+.formli.min .formli_r {
+	display: block;
+}
+
+.formli.min .formli_r span {}
+
+.formli.min .formli_r input {
+	width: 100% !important;
+	font-size: 0.2rem;
+	text-align: center;
+}
+.verifyCodeBtn {
+    vertical-align: middle;
+    width: 1.3rem !important;
+    border: none !important;
+    border-radius: 0.03rem;
+    background: #4cac26;
+    height: 0.32rem;
+    color: #fff;
+    cursor: pointer;
+    font-size: 0.12rem !important;
+    outline-color: invert;
+    outline-style: none;
+    outline-width: 0;
+    text-shadow: none;
+    -webkit-appearance: none;
+    -webkit-user-select: text;
+    outline-color: transparent;
+    box-shadow: none;
+}
+.mesImg {
+    display: block;
+    width: 1rem;
+    height: 1rem;
+    margin-bottom: 0.15rem;
+    margin: 0 auto;
+}
+.mask {
+	position: fixed;
+	background: rgba(0, 0, 0, 0.6);
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	display: none;
+}
+
+.mask .popWindow {
+	background: #fff;
+	max-width: 3.5rem;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border-radius: 0.06rem;
+	width: 87%;
+	font-size: 0.16rem;
+}
+
+.mask .popBody {
+	background: url(../img/paying.jpg) no-repeat top left;
+	padding-left: 2.4rem;
+	background-size: auto 100%;
+	height: 1.9rem;
+	margin: 0.1rem;
+	padding-top: 0.1rem;
+	padding-right: 0.15rem;
+}
+
+.mask .popWindow h4 {
+	margin: 0;
+	font-size: 0.16rem;
+	padding: 0.1rem 0.2rem;
+	background: #f8f8f8;
+	border-radius: 0.06rem 0.06rem 0 0;
+}
+
+.mask .popBody .success {
+	font-size: 0.18rem;
+	border-bottom: 1px #efefef solid;
+}
+
+.mask .popBody .fail {}
+
+.mask .popBody .success a,
+.mask .popBody .fail a {
+	text-decoration: none;
+	color: #f15626;
+	font-size: 0.14rem;
+}
+
+.mask .popWindow .closeBtn {
+	font-size: 0.24rem;
+	position: absolute;
+	text-decoration: none;
+	color: #efefef;
+	transform: rotate(45deg);
+	left: 50%;
+	bottom: -0.49rem;
+	margin-left: -0.16rem;
+}
+
+.mask .popWindow .closeBtn:hover {
+	color: #fff;
+}
+
+.shopdz_alert {
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%);
+	background: #000000;
+	color: #fff;
+	padding: 0.2rem;
+	border-radius: 0.05rem;
+}
+@media (max-width: 1024px) {
+
+	html,
+	body {
+		font-size: 760%;
+	}
+}
+
+@media (max-width: 768px) {
+	html,
+	body {
+		font-size: 676%;
+	}
+}
+
+@media (max-width: 470px) {
+	html,
+	body {
+		font-size: 672%;
+	}
+}
+
+@media (max-width: 425px) {
+
+	html,
+	body {
+		font-size: 580%;
+	}
+}
+
+@media (max-width: 375px) {
+
+	html,
+	body {
+		font-size: 540%
+	}
+}
+
+@media (max-width: 320px) {
+
+	html,
+	body {
+		font-size: 482%;
+	}
+}
